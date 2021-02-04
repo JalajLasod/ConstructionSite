@@ -6,7 +6,7 @@
     <title>Construction</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
   </head>
   <style media="screen">
   nav{
@@ -78,16 +78,18 @@
     }
     button{
       background-color: #f0ad4e;
-      transition: 2s;
+      transition: 1s;
     }
     button:hover{
       background-color:white;
-      transform: rotate(360deg);
       text-decoration: none;
     }
   </style>
   <body>
-    <div class="nav">
+    <div class="" id="spinner" style="display:block;">
+      <img src="assets/002.gif" alt=""style="height:50vw;width:100%;">
+    </div>
+    <div class="nav" style="display:none;">
       <header>
         <div class="" style="position:sticky;">
           <nav class="navbar navbar-expand-sm bg-warning navbar-justified " style="padding:0;">
@@ -126,5 +128,11 @@
         </div>
       </header>
     </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#spinner').css('dsplay','none');
+        $('.nav').css('display','block');
+      })
+    </script>
   </body>
 </html>
